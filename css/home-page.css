@@ -3,19 +3,21 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 100vh;
     min-height: 650px;
 }
-.header__logo{
+.header__container{
+    display: flex;
+    align-items: center;
+}
+.logo{
     margin-top: 16px;
-    display: block;
 }
 .nav{
     margin-left: auto;
 
 }
-.nav__list{
+.nav-list{
 
     display: flex;
     padding: 0;
@@ -33,6 +35,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
     color: #ffffff;
+    text-transform: uppercase ;
 }
 .nav__item::before{
     content: "";
@@ -56,10 +59,8 @@
     display: block;
     text-align: center;
     vertical-align: top;
-    background-color: #e45028;
     height: 35px;
     width: 98px;
-    border-radius: 4px;
     margin-top: 30px;
 }
 .button-text{
@@ -67,39 +68,43 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
     color: #ffffff;
+    background-color: #e45028;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
-.burger-header{
+.intro{
     margin-bottom: 90px;
     display: flex;
     margin-top: -7px;
 
 }
-.burger-header-img{
+.intro-img{
     margin-left: 15px;
 
 
 }
-.burger-header__text{
+.intro__text{
     display: flex;
     flex-direction: column;
     margin-top: 134px;
     margin-left: 11px;
 }
-.burger-header__text__top-line{
+.intro__text__top-line{
     font-family: gagalinregular;
     font-size: 72px;
     color: #f9b43b;
     margin-bottom: 10px;
+    text-transform: uppercase ;
 
 }
-.burger-header__text__bottom-line{
+.intro__text__bottom-line{
     font-family: lifehackmedium;
     font-size: 65px;
     color: #ffffff;
     letter-spacing: -2px;
     line-height: 1;
 }
-.arrow-scroll{
+.arrow{
     margin-bottom: 38px;
 
 }
@@ -107,4 +112,44 @@
     position: fixed;
     right: 30px;
     top: 70px;
+}
+.points-scroll__list{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: fixed;
+
+}
+.points-scroll__item{
+    position:relative;
+    width:5px;
+    height:5px;
+    margin-bottom:20px;
+}
+.points-scroll__item:before{
+    content:'';
+    display:inline-block;
+    width:5px;
+    height:5px;
+    background:red;
+    border-radius:50%;
+    position: absolute;
+    left:3px;
+    top:2px;
+}
+.points-scroll__item:after{
+    content:'';
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border:1px solid red;
+    border-radius:50%;
+    position: absolute;
+    left:0;
+    top:0;
+    opacity:0;
+}
+.points-scroll__item:hover:after{
+    opacity:1;
+    cursor:pointer;
 }
