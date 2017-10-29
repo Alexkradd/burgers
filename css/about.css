@@ -1,4 +1,4 @@
-.about__conteiner{
+.about__container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.about-title{
+.about__title{
     display: flex;
     font-family: gagalinregular;
     font-size: 72px;
@@ -18,7 +18,7 @@
     margin-top: 80px;
     text-align: center;
 }
-.about-icon{
+.about__icon{
     margin-bottom: 30px;
 }
 .about-list{
@@ -27,19 +27,20 @@
     justify-content: center;
     margin-top: 80px;
     align-items: center;
+    position: absolute;
 }
 .about__item{
     list-style-type: none;
     margin-right: 20px;
     align-items: center;
 }
-.about-item-title{
+.about__subtitle{
     font-family: lifehackmedium;
     font-size: 24.1px;
     color: #2f3234;
     width: 80%;
 }
-.about-item-description{
+.about__description{
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     color: #2f3234;

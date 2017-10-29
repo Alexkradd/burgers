@@ -9,7 +9,12 @@
     align-items: center;
 }
 .logo{
-    margin-top: 16px;
+    max-width: 100%;
+    height: auto;
+    width: auto
+}
+.header__logo{
+    margin-top: 15px;
 }
 .nav{
     margin-left: auto;
@@ -52,9 +57,7 @@
     content: none;
 }
 
-.button{
-}
-.button-text{
+.button__link{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
@@ -70,7 +73,7 @@
     margin-top: -7px;
 
 }
-.intro-img{
+.intro__image{
     margin-left: 15px;
 
 
@@ -81,43 +84,45 @@
     margin-top: 134px;
     margin-left: 11px;
 }
-.intro__text__top-line{
+.intro__title{
     font-family: gagalinregular;
     font-size: 72px;
     color: #f9b43b;
     margin-bottom: 10px;
     text-transform: uppercase ;
+    font-weight: 400;
+    margin-top: 0;
 
 }
-.intro__text__bottom-line{
+.intro__subtitle{
     font-family: lifehackmedium;
     font-size: 65px;
     color: #ffffff;
     letter-spacing: -2px;
     line-height: 1;
+    margin: 0;
+    font-weight: 500;
 }
 .arrow{
     margin-bottom: 38px;
 
 }
-.points-scroll{
+.points{
     position: fixed;
     right: 30px;
     top: 70px;
-}
-.points-scroll__list{
     list-style-type:none;
     margin:0;
     padding:0;
-
 }
-.points-scroll__item{
+
+.points__item{
     position:relative;
     margin-bottom:15px;
     width:6px;
     height:6px;
 }
-.points-scroll__item:before{
+.points__item:before{
     content:'';
     display:inline-block;
     width:6px;
@@ -128,7 +133,7 @@
     left:5px;
     top:5px;
 }
-.points-scroll__item:after{
+.points__item:after{
     content:'';
     display:inline-block;
     width:14px;
@@ -140,7 +145,7 @@
     top:0;
     opacity:0;
 }
-.points-scroll__item:hover:after{
+.points__item:hover:after{
     opacity:1;
     cursor:pointer;
 }

@@ -12,9 +12,7 @@
     height: 100vh;
     min-height: 650px;
 }
-.wrapper{
 
-}
 .container{
     display: flex;
     width: 940px;
