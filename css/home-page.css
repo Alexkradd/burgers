@@ -73,16 +73,18 @@
     margin-top: -7px;
 
 }
-.intro__image{
-    margin-left: 15px;
-
+.intro__intro__image{
+    flex: 1;
+    align-items: flex-start;
+    margin-left: 25px;
 
 }
 .intro__text{
     display: flex;
     flex-direction: column;
-    margin-top: 134px;
-    margin-left: 11px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 15px;
 }
 .intro__title{
     font-family: gagalinregular;

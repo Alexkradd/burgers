@@ -27,6 +27,8 @@
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    padding: 0;
+    align-items: baseline;
 
 }
 .about__item{
@@ -35,6 +37,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex: 3;
 }
 .about__subtitle{
     font-family: lifehackmedium;
@@ -44,8 +47,8 @@
     display: block;
 }
 .about__description{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Light', sans-serif;
     font-size: 14px;
     color: #2f3234;
-    font-weight: lighter;
+    line-height: 1.5
 }
