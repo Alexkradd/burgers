@@ -65,7 +65,7 @@
     background-color: #e45028;
     border-radius: 4px;
     text-transform: uppercase;
-    padding: 13px 16px;
+    padding: 10px 20px;
 }
 .intro{
     margin-bottom: 90px;
@@ -106,9 +106,11 @@
     font-weight: 500;
 }
 .arrow{
-    margin-bottom: 38px;
-
+    bottom: 50px;
+    position: absolute;
+    left: 50%;
 }
+
 .points{
     position: fixed;
     right: 30px;
