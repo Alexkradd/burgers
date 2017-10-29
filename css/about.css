@@ -18,6 +18,9 @@
     margin-top: 80px;
     text-align: center;
 }
+.about__image{
+    text-align: center;
+}
 .about__icon{
     margin-bottom: 30px;
 }
@@ -27,7 +30,7 @@
     justify-content: center;
     margin-top: 80px;
     align-items: center;
-    position: absolute;
+
 }
 .about__item{
     list-style-type: none;
@@ -38,7 +41,10 @@
     font-family: lifehackmedium;
     font-size: 24.1px;
     color: #2f3234;
-    width: 80%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 50%;
 }
 .about__description{
     font-family: 'Ubuntu', sans-serif;
