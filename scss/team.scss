@@ -1,0 +1,99 @@
+.team{
+  height: 100vh;
+  min-height: 650px;
+  background-image: url(../img/team.png);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.container-team{
+  position: absolute;
+  background-color: #3e4042;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0.9;
+}
+.team__descriptions{
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.team__title{
+  display: flex;
+  align-content: center;
+  margin: 85px 0;
+}
+.team-list{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+.team__item{
+  margin-bottom: 35px;
+}
+.team__name{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: gagalinregular;
+  font-size: 14px;
+
+  &:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: #f9b43b;
+    border-bottom-width: 0;
+    margin-right: 10px;
+
+  }
+}
+.team__item_active {
+  .team__name {
+    color: #f9b43b;
+
+    &:before {
+      transform: rotate(-180deg);
+    }
+  }
+  .team__content{
+    height: 120px;
+  }
+}
+.team__content{
+  display: flex;
+  width: 350px;
+  margin-top: 15px;
+  height: 0;
+  overflow: hidden;
+}
+.team__avatar{
+  background-image: url(../img/team/dan.jpg);
+  height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  flex: 1;
+  margin-left: 15px;
+}
+.team__text{
+  margin-left: 20px;
+}
+.team__text_title{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.team__text_description{
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  line-height: 1.6;
+}
