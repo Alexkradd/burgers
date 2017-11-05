@@ -1,14 +1,14 @@
 .menu{
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   background-image: url(../img/menu-bg.jpg);
   background-size: cover;
   position: relative;
 }
 .menu__title{
   color: white;
-  left: 100px;
-  top: 110px;
+  left: rem(100px);
+  top: rem(110px);
   position: absolute;
 }
 .menu-list{
@@ -35,7 +35,7 @@
 }
 .menu__image{
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 .menu-list__title{
   position: absolute;
@@ -43,7 +43,7 @@
   display: inline-block;
   top: 50%;
   font-family: gagalinregular;
-  font-size: 40px;
+  font-size: rem(40px);
   color: white;
   text-decoration: none;
   white-space: nowrap;
@@ -56,10 +56,10 @@
 .menu-list__text{
   color: white;
   font-family: 'Ubuntu Light', sans-serif;
-  font-size: 14px;
-  margin: 60px 35px;
+  font-size: rem(14px);
+  margin: rem(60px) rem(35px);
   line-height: 1.6;
 }
 .menu-list__active .menu-list__description{
-  width: 550px;
+  width: rem(550px);
 }

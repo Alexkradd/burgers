@@ -1,10 +1,12 @@
 .order-form {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   background-image: url(../img/form-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .form-container{
   display: flex;
@@ -15,49 +17,50 @@
 }
 .form {
   display: flex;
+  margin-top: rem(90px);
   &__row{
     flex: 2;
 
   }
   &__column{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     &-textarea{
       flex-direction: column;
     }
   }
   &__el{
-    margin-right: 18px;
+    margin-right: rem(18px);
     flex:1;
   }
   &__input{
-    border-radius: 5px;
-    border: 1px solid transparent;
+    border-radius: rem(5px);
+    border: rem(1px) solid transparent;
     background: #fff;
     width: 100%;
-    height: 35px;
+    height: rem(35px);
     padding: 0;
     &:focus{
-      border: 2px solid #f9b43b;
+      border: rem(2px) solid #f9b43b;
       outline: none
     }
   }
   &__label{
     display: block;
     font-family: 'Ubuntu Light', sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
   &__comments{
     resize: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
     outline: none;
     width: 100%;
-    height: 118px;
+    height: rem(118px);
     padding: 0;
     &:focus{
-      border: 2px solid #f9b43b;
+      border: rem(2px) solid #f9b43b;
     }
   }
   &__radio{
@@ -66,25 +69,25 @@
       @extend .form__checkbox-custom;
       border-radius: 50%;
       display: inline-block;
-      margin-bottom: 14px;
+      margin-bottom: rem(14px);
     }
   }
   &__radio:checked + &__radio-custom::before{
     content: "";
     display: block;
     position: absolute;
-    top: 4px;
-    right: 4px;
-    bottom: 4px;
-    left: 4px;
+    top: rem(4px);
+    right: rem(4px);
+    bottom: rem(4px);
+    left: rem(4px);
     background: #e35028;
     border-radius: 50%
   }
 
   &__text{
-    margin:0 20px 0 8px;
+    margin:0 rem(20px) 0 rem(8px);
     font-family: 'Ubuntu Light', sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 
   }
@@ -93,8 +96,8 @@
     outline: none;
     &-custom{
       position: relative;
-      width: 15px;
-      height: 15px;
+      width: rem(15px);
+      height: rem(15px);
       background: #fff;
     }
   }
@@ -106,8 +109,8 @@
     content: "✔";
     display: block;
     position: absolute;
-    top: -2px;
-    left: 2px;
+    top: rem(-2px);
+    left: rem(2px);
     color:#e35028;
     font-weight: 900;
   }
@@ -116,10 +119,10 @@
     border: none;
     color: #fff;
     font-family: 'Ubuntu Light', sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
     outline: none;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: rem(10px);
   }
 
 }

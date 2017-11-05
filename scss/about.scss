@@ -15,27 +15,27 @@
 .about__title{
   display: flex;
   font-family: gagalinregular;
-  font-size: 72px;
+  font-size: rem(72px);
   color: #2f3234;
   text-transform: uppercase ;
   text-align: center;
 }
 
 .about__icon{
-  margin-bottom: 30px;
-  height: 90px;
+  margin-bottom: rem(30px);
+  height: rem(90px);
 }
 .about-list{
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: rem(80px);
   padding: 0;
   align-items: baseline;
 
 }
 .about__item{
   list-style-type: none;
-  margin-right: 20px;
+  margin-right: rem(20px);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -43,14 +43,14 @@
 }
 .about__subtitle{
   font-family: lifehackmedium;
-  font-size: 24.1px;
+  font-size: rem(24.1px);
   color: #2f3234;
   width: 100%;
   display: block;
 }
 .about__description{
   font-family: 'Ubuntu Light', sans-serif;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #2f3234;
   line-height: 2;
 }

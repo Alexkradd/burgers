@@ -1,3 +1,12 @@
+.html{
+  font-size: 16px;
+  @include tablet{
+    font-size: 15px;
+  @include phone{
+    font-size: 14px;
+  }
+  }
+}
 .screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,14 +19,26 @@
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .container {
   display: flex;
-  width: 940px;
+  width: rem(940px);
+  @include tablet{
+    width: rem(720px);
+  }
+  @include phone{
+    width: rem(460px);
+  }
 
 }
 .wrapper{
-  min-width: 940px;
+  min-width: rem(940px);
+  @include tablet{
+    min-width: rem(720px);
+  }
+  @include phone{
+    min-width: rem(460px);
+  }
 }
