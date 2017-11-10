@@ -1,0 +1,170 @@
+.order-form {
+  height: 100vh;
+  min-height: rem(650px);
+  background-image: url(../img/form-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__title{
+    @include phone{
+      font-size: rem(50px) ;
+      text-align: center;
+      margin-top: rem(10px);
+    }
+  }
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  margin-top: rem(90px);
+  @include tablet {
+    flex-direction: column;
+    margin-top: rem(70px);
+    width: rem(472px);
+  }
+  @include phone {
+    flex-direction: column;
+    margin-top: rem(5px);
+  }
+  &__row{
+    flex: 2;
+
+  }
+  &__column{
+    display: flex;
+    margin-bottom: rem(20px);
+    &-textarea{
+      flex-direction: column;
+
+    }
+
+  }
+
+  &__el{
+    margin-right: rem(18px);
+    flex:1;
+    @include tablet {
+      &:last-child{
+        margin-right: 0;
+      }
+
+    }
+    @include phone {
+      &:last-child{
+        margin-right: 0;
+      }
+
+    }
+  }
+  &__input{
+    border-radius: rem(5px);
+    border: rem(1px) solid transparent;
+    background: #fff;
+    width: 100%;
+    height: rem(35px);
+    padding: 0;
+
+    @include phone{
+      height: rem(33px);
+    }
+    &:focus{
+      border: rem(2px) solid #f9b43b;
+      outline: none
+    }
+  }
+  &__label{
+    display: block;
+    font-family: 'Ubuntu Light', sans-serif;
+    font-size: rem(14px);
+    color: #fff;
+    margin-bottom: rem(10px);
+  }
+  &__comments{
+    resize: none;
+    border-radius: rem(5px);
+    outline: none;
+    width: 100%;
+    height: rem(118px);
+    padding: 0;
+    @include phone{
+      height: rem(108px);
+    }
+    &:focus{
+      border: rem(2px) solid #f9b43b;
+    }
+  }
+  &__radio{
+    display: none;
+    &-custom {
+      @extend .form__checkbox-custom;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: rem(14px);
+    }
+  }
+  &__radio:checked + &__radio-custom::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: rem(4px);
+    right: rem(4px);
+    bottom: rem(4px);
+    left: rem(4px);
+    background: #e35028;
+    border-radius: 50%
+  }
+
+  &__text{
+    margin:0 rem(20px) 0 rem(8px);
+    font-family: 'Ubuntu Light', sans-serif;
+    font-size: rem(14px);
+    color: #fff;
+  }
+  &__button-link{
+    @include tablet{
+      margin-left: 0;
+    }
+  }
+  &__checkbox{
+    display: none;
+    outline: none;
+    &-custom{
+      position: relative;
+      width: rem(15px);
+      height: rem(15px);
+      background: #fff;
+    }
+  }
+  &__checkbox-custom ,&__label-style{
+    display: inline-block;
+    vertical-align:text-top;
+  }
+  &__checkbox:checked + &__checkbox-custom::before{
+    content: "✔";
+    display: block;
+    position: absolute;
+    top: rem(-2px);
+    left: rem(2px);
+    color:#e35028;
+    font-weight: 900;
+  }
+  &__clear{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Ubuntu Light', sans-serif;
+    font-size: rem(14px);
+    outline: none;
+    cursor: pointer;
+    margin-left: rem(10px);
+  }
+
+}

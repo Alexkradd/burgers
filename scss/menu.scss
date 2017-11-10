@@ -1,0 +1,65 @@
+.menu{
+  height: 100vh;
+  min-height: rem(650px);
+  background-image: url(../img/menu-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+.menu__title{
+  color: white;
+  left: rem(100px);
+  top: rem(110px);
+  position: absolute;
+}
+.menu-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.menu-list__item, .menu-list__link{
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.menu-list__item{
+  display: flex;
+}
+
+.menu-list__link{
+
+}
+.menu__image{
+  height: 100vh;
+  min-height: rem(650px);
+}
+.menu-list__title{
+  position: absolute;
+  transform: rotate(-90deg) translateY(-170%);
+  display: inline-block;
+  top: 50%;
+  font-family: gagalinregular;
+  font-size: rem(40px);
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.menu-list__description{
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(62, 64, 66, 0.9);
+}
+.menu-list__text{
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  font-size: rem(14px);
+  margin: rem(60px) rem(35px);
+  line-height: 1.6;
+}
+.menu-list__active .menu-list__description{
+  width: rem(550px);
+}
