@@ -89,18 +89,26 @@
                  <ul class="about-list">
                      <li class="about__item">
                          <div class="about__image"><img class="about__icon" src="./img/icons/meat.svg" alt=""></div>
-                         <span class="about__subtitle">100% свежее мясо</span>
-                         <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                         <div class="about__text">
+                             <span class="about__subtitle">100% свежее мясо</span>
+                             <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                         </div>
                      </li>
                      <li class="about__item">
                          <div class="about__image"><img class="about__icon" src="./img/icons/hand.svg" alt=""></div>
-                         <span class="about__subtitle">Ручная  сборка</span>
-                         <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                         <div class="about__text">
+                             <span class="about__subtitle">Ручная  сборка</span>
+                             <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                         </div>
+
                      </li>
                      <li class="about__item">
                          <div class="about__image"><img class="about__icon" src="./img/icons/natural.svg" alt=""></div>
-                         <span class="about__subtitle">Натуральные ингредиенты</span>
-                         <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                         <div class="about__text">
+                             <span class="about__subtitle">Натуральные ингредиенты</span>
+                             <p class="about__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                         </div>
+
                      </li>
                  </ul>
              </div>
@@ -250,7 +258,7 @@
           </section>
           <section class="order-form">
               <div class="container form-container">
-                  <h1 class="section__title">Закажите доставку</h1>
+                  <h1 class="section__title order-form__title">Закажите доставку</h1>
                   <form class="form">
                       <div class="form__row">
                           <div class="form__column">
@@ -289,11 +297,11 @@
                           </div>
                       </div>
                       <div class="form__row">
-                          <div class="form__column form__column-textarea">
+                          <div class="form__column form__column-textarea form__column__m-b-35">
                               <label for="comments" class="form__label">Коментарии</label>
                               <textarea name="comments" class="form__comments" id="comments" cols="30" rows="10"></textarea>
                           </div>
-                          <div class="form__column">
+                          <div class="form__column form__column__m-b-35">
                               <label for="required" class="form__label-style">
                                   <input type="radio" name="payment" id="required" value="required" class="form__radio">
                                   <span class="form__radio-custom"></span>
@@ -305,15 +313,15 @@
                                   <span class="form__text">Оплата по карте</span>
                               </label>
                           </div>
-                          <div class="form__column">
+                          <div class="form__column form__column__m-b-35">
                               <label for="checkbox" class="form__label-style">
                                   <input type="checkbox" class="form__checkbox" id="checkbox" >
                                   <span class="form__checkbox-custom"></span>
                                   <span class="form__text">Не перезванивать</span>
                               </label>
                           </div>
-                          <div class="form__column">
-                              <a href="#order-form" class="button__link">заказать</a>
+                          <div class="form__column form__column__m-b-35">
+                              <a href="#order-form" class="button__link form__button-link">заказать</a>
                               <input type="reset" class="form__clear" value="Очистить">
                           </div>
                       </div>
@@ -322,13 +330,50 @@
               </div>
           </section>
           <section class="contact">
-                  <footer class="contact-futer">
-                      <div class="contact-info">
+                  <footer class="contact-footer">
+                      <div class="container contact-info">
                           <address class="contact-info__information">
                               <span class="contact-info__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
-                              <a class="contact-info__tel">+7 (812) 377-13-77</a>
+                              <a href="tel:8812377377" class="contact-info__tel">
+                                  <svg id="phone" class="phone__link_icon">
+                                      <use xlink:href="img/icons/sprite.svg#phone"></use>
+                                  </svg>
+                                  +7 (812) 377-13-77</a>
                           </address>
-                          <div class="icons"></div>
+                          <div class="footer__col social">
+                              <ul class="social__list">
+                                  <li class="social__item">
+                                      <a href="https://vk.com" class="social__link_icon" target="_blank">
+                                          <svg  id="vk" class="social__link_icon">
+                                              <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                          </svg>
+                                      </a>
+                                  </li>
+                                  <li class="social__item">
+                                      <a href="#" class="social__link_icon" target="_blank">
+                                          <svg id="fb" class="social__link_icon">
+                                              <use xlink:href="img/icons/sprite.svg#fb"></use>
+                                          </svg>
+                                      </a>
+                                  </li>
+                                  <li class="social__item">
+                                      <a href="#" class="social__link_icon" target="_blank">
+                                          <svg id="inst" class="social__link_icon">
+                                              <use xlink:href="img/icons/sprite.svg#inst"></use>
+                                          </svg>
+                                      </a>
+                                  </li>
+                                  <li class="social__item">
+                                      <a href="#" class="social__link_icon" target="_blank">
+                                          <svg id="twitter" class="social__link_icon">
+                                              <use xlink:href="img/icons/sprite.svg#twitter"></use>
+                                          </svg>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+
+
 
                       </div>
                   </footer>

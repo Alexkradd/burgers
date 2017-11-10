@@ -7,6 +7,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  &__title{
+    @include phone{
+      font-size: rem(50px) ;
+      text-align: center;
+      margin-top: rem(10px);
+    }
+  }
 }
 .form-container{
   display: flex;
@@ -18,6 +25,15 @@
 .form {
   display: flex;
   margin-top: rem(90px);
+  @include tablet {
+    flex-direction: column;
+    margin-top: rem(70px);
+    width: rem(472px);
+  }
+  @include phone {
+    flex-direction: column;
+    margin-top: rem(5px);
+  }
   &__row{
     flex: 2;
 
@@ -27,11 +43,26 @@
     margin-bottom: rem(20px);
     &-textarea{
       flex-direction: column;
+
     }
+
   }
+
   &__el{
     margin-right: rem(18px);
     flex:1;
+    @include tablet {
+      &:last-child{
+        margin-right: 0;
+      }
+
+    }
+    @include phone {
+      &:last-child{
+        margin-right: 0;
+      }
+
+    }
   }
   &__input{
     border-radius: rem(5px);
@@ -40,6 +71,10 @@
     width: 100%;
     height: rem(35px);
     padding: 0;
+
+    @include phone{
+      height: rem(33px);
+    }
     &:focus{
       border: rem(2px) solid #f9b43b;
       outline: none
@@ -59,6 +94,9 @@
     width: 100%;
     height: rem(118px);
     padding: 0;
+    @include phone{
+      height: rem(108px);
+    }
     &:focus{
       border: rem(2px) solid #f9b43b;
     }
@@ -89,7 +127,11 @@
     font-family: 'Ubuntu Light', sans-serif;
     font-size: rem(14px);
     color: #fff;
-
+  }
+  &__button-link{
+    @include tablet{
+      margin-left: 0;
+    }
   }
   &__checkbox{
     display: none;

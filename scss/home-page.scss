@@ -76,6 +76,9 @@
   @include tablet{
     margin-left: auto;
   }
+  @include phone{
+    margin-left: auto;
+  }
 }
 .nav-hamburger{
   flex-direction: column;
