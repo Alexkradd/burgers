@@ -24,6 +24,14 @@
   display: flex;
   flex-direction: column;
   margin-left: rem(80px);
+  @include tablet{
+    margin: 0;
+    align-items: center;
+  }
+  @include phone{
+    margin: 0;
+    align-items: center;
+  }
 }
 .team__title{
   display: flex;
@@ -79,7 +87,15 @@
     }
   }
   .team__content{
-    height: rem(120px);
+    height: auto;
+    @include tablet{
+      flex-direction: column;
+      align-items: center;
+    }
+    @include phone{
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 .team__content{
@@ -101,12 +117,24 @@
 }
 .team__text{
   margin-left: rem(20px);
+  @include tablet{
+    text-align: center;
+  }
+  @include phone{
+    text-align: center;
+  }
 }
 .team__text_title{
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: rem(14px);
   margin: 0;
+  @include tablet{
+    margin: rem(15px) 0;
+  }
+  @include phone{
+    margin: rem(15px) 0;
+  }
 }
 .team__text_description{
   color: white;
@@ -114,4 +142,10 @@
   font-size: rem(14px);
   margin: rem(20px) 0 0 0;
   line-height: 1.6;
+  @include tablet{
+    margin: 0;
+  }
+  @include phone{
+    margin: 0;
+  }
 }

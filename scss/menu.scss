@@ -10,6 +10,9 @@
   left: rem(100px);
   top: rem(110px);
   position: absolute;
+  @include phone{
+    left: 2.5rem;
+  }
 }
 .menu-list{
   list-style-type: none;
@@ -47,6 +50,12 @@
   color: white;
   text-decoration: none;
   white-space: nowrap;
+  @include tablet{
+    top: 70%;
+  }
+  @include phone{
+    top: 70%;
+  }
 }
 .menu-list__description{
   width: 0;

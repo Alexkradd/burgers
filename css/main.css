@@ -155,20 +155,14 @@
   max-width: 100%; }
   @media (min-width: 480px) and (max-width: 768px) {
     .intro__intro__image {
-      width: initial;
+      width: 50%;
       margin: 0; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .intro__intro__image {
-      width: initial;
+      width: 70%;
       margin: 0; } }
   .intro__intro__image .intro__picture {
     width: 100%; }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .intro__intro__image .intro__picture {
-        width: 70%; } }
-    @media (min-width: 320px) and (max-width: 480px) {
-      .intro__intro__image .intro__picture {
-        width: 70%; } }
 
 .intro__text {
   display: -webkit-box;
@@ -324,10 +318,16 @@
   width: 58.75rem; }
   @media (min-width: 480px) and (max-width: 768px) {
     .container {
-      width: 45rem; } }
+      width: 45rem;
+      padding: 0 1rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .container {
-      width: 28.75rem; } }
+      width: 28.75rem;
+      padding: 0 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; } }
 
 .wrapper {
   min-width: 58.75rem; }
@@ -609,6 +609,20 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 5rem; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__descriptions {
+      margin: 0;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__descriptions {
+      margin: 0;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team__title {
   display: -webkit-box;
@@ -675,7 +689,29 @@
     transform: rotate(-180deg); }
 
 .team__item_active .team__content {
-  height: 7.5rem; }
+  height: auto; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__item_active .team__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__item_active .team__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team__content {
   display: -webkit-box;
@@ -702,12 +738,24 @@
 
 .team__text {
   margin-left: 1.25rem; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__text {
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__text {
+      text-align: center; } }
 
 .team__text_title {
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 0.875rem;
   margin: 0; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__text_title {
+      margin: 0.9375rem 0; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__text_title {
+      margin: 0.9375rem 0; } }
 
 .team__text_description {
   color: white;
@@ -715,6 +763,12 @@
   font-size: 0.875rem;
   margin: 1.25rem 0 0 0;
   line-height: 1.6; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__text_description {
+      margin: 0; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__text_description {
+      margin: 0; } }
 
 .menu {
   height: 100vh;
@@ -728,6 +782,9 @@
   left: 6.25rem;
   top: 6.875rem;
   position: absolute; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .menu__title {
+      left: 2.5rem; } }
 
 .menu-list {
   list-style-type: none;
@@ -769,6 +826,12 @@
   color: white;
   text-decoration: none;
   white-space: nowrap; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .menu-list__title {
+      top: 70%; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .menu-list__title {
+      top: 70%; } }
 
 .menu-list__description {
   width: 0;

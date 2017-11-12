@@ -27,9 +27,13 @@
   width: rem(940px);
   @include tablet{
     width: rem(720px);
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
   @include phone{
     width: rem(460px);
+    padding: 0 0.5rem;
+    box-sizing: border-box;
   }
 
 }
