@@ -29,6 +29,12 @@
   display: flex;
   align-content: center;
   margin: rem(85px) 0;
+  @include tablet{
+
+  }
+  @include phone{
+    margin: rem(60px) 0 rem(85px) 0;
+  }
 }
 .team-list{
   display: flex;
@@ -46,6 +52,12 @@
   align-items: center;
   font-family: gagalinregular;
   font-size: rem(14px);
+  @include tablet{
+    font-size: rem(24px);
+  }
+  @include phone{
+    font-size: rem(24px);
+  }
 
   &:before {
     content: "";

@@ -47,6 +47,9 @@
   @include phone{
     flex-direction: row;
   }
+  &:last-child{
+    margin: 0;
+  }
 }
 .about__subtitle{
   font-family: lifehackmedium;
