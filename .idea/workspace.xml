@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e680beb-0c7e-4b16-bc16-aa5841685b4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/about.scss" afterPath="$PROJECT_DIR$/scss/about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/home-page.scss" afterPath="$PROJECT_DIR$/scss/home-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/menu.scss" afterPath="$PROJECT_DIR$/scss/menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/order-form.scss" afterPath="$PROJECT_DIR$/scss/order-form.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/team.scss" afterPath="$PROJECT_DIR$/scss/team.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -502,7 +494,7 @@
       <workItem from="1509815552680" duration="1183000" />
       <workItem from="1509902953632" duration="12687000" />
       <workItem from="1510168791199" duration="21777000" />
-      <workItem from="1510508648596" duration="11000" />
+      <workItem from="1510508648596" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="исправления">
       <created>1509019579843</created>
@@ -658,11 +650,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510352105134</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Адаптив, все что осилила">
+      <created>1510508680823</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1510508680823</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118688000" />
+    <option name="totallyTimeSpent" value="118725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1078,6 +1077,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
