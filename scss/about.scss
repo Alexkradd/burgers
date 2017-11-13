@@ -1,0 +1,66 @@
+.about__container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+.about{
+  background-image: url(../img/we/back-we.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row;
+}
+.about__title{
+  display: flex;
+  font-family: gagalinregular;
+  font-size: rem(72px);
+  color: #2f3234;
+  text-transform: uppercase ;
+  text-align: center;
+}
+
+.about__icon{
+  margin-bottom: rem(30px);
+  height: rem(90px);
+}
+.about-list{
+  display: flex;
+  justify-content: center;
+  margin-top: rem(80px);
+  padding: 0;
+  align-items: baseline;
+  @include phone {
+    flex-direction: column;
+  }
+
+
+}
+.about__item{
+  list-style-type: none;
+  margin-right: rem(20px);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  @include phone{
+    flex-direction: row;
+  }
+  &:last-child{
+    margin: 0;
+  }
+}
+.about__subtitle{
+  font-family: lifehackmedium;
+  font-size: rem(24.1px);
+  color: #2f3234;
+  width: 100%;
+  display: block;
+}
+.about__description{
+  font-family: 'Ubuntu Light', sans-serif;
+  font-size: rem(14px);
+  color: #2f3234;
+  line-height: 2;
+}

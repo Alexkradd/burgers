@@ -1,0 +1,245 @@
+.greeting{
+  background-image: url(../img/background-home.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__container{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  max-width: 100%;
+  height: rem(69px);
+  width: rem(92px);
+}
+.header__logo{
+  margin-top: rem(15px);
+}
+.nav{
+  margin-left: auto;
+  @include tablet{
+    display: none;
+  }
+  @include phone{
+    display: none;
+  }
+
+
+}
+.nav-list{
+
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.nav__item{
+  list-style: none;
+  position: relative;
+  margin-left: rem(30px);
+
+}
+.nav__link{
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: rem(13px);
+  color: #ffffff;
+  text-transform: uppercase ;
+}
+.nav__item::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: rem(-15px);
+  bottom: rem(5px);
+  width: rem(4px);
+  height: rem(4px);
+  border-radius: 50%;
+  background-color: #fff;
+}
+.nav__item:last-child .nav__link{
+  padding-right: rem(15px);
+}
+.nav__item:last-child::after{
+  content: none;
+}
+
+.button__link{
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: rem(13px) ;
+  color: #ffffff;
+  background-color: #e45028;
+  border-radius: rem(4px);
+  text-transform: uppercase;
+  padding: rem(10px) rem(20px);
+  @include tablet{
+    margin-left: auto;
+  }
+  @include phone{
+    margin-left: auto;
+  }
+}
+.nav-hamburger{
+  flex-direction: column;
+  margin-left: rem(30px);
+  display: none;
+  @include tablet{
+    display: flex;
+  }
+  @include phone{
+    display: flex;
+  }
+  &__line{
+    width: rem(25px);
+    height: rem(5px);
+    border-radius: rem(2px);
+    margin-bottom: rem(5px);
+    background: white;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.intro{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container-intro{
+  @include tablet{
+    flex-direction: column;
+    align-items: center;
+  }
+  @include phone{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+.intro__intro__image{
+
+  align-items: flex-start;
+  margin-left: rem(25px);
+  display: block;
+  max-width: 100%;
+  @include tablet{
+    width: 50%;
+    margin: 0;
+  }
+  @include phone{
+    width: 70%;
+    margin: 0;
+  }
+.intro__picture{
+  width: 100%;
+}
+}
+.intro__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: rem(15px);
+  padding-top: rem(70px);
+  @include tablet{
+    align-items: center;
+    margin: 0;
+    padding-top: rem(30px);
+  }
+  @include phone{
+    margin: 0;
+    align-items: center;
+    padding-top: rem(30px);
+  }
+}
+.section__title{
+  font-family: gagalinregular;
+  font-size: rem(72px);
+  color: #f9b43b;
+  text-transform: uppercase ;
+  font-weight: 400;
+  margin: 0;
+  @include tablet{
+    font-size: rem(65px);
+  }
+  @include phone{
+    font-size: rem(60px);
+  }
+
+}
+.intro__subtitle{
+  font-family: lifehackmedium;
+  font-size: rem(65px);
+  color: #ffffff;
+  letter-spacing: rem(-2px);
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+  margin-top: rem(20px);
+  @include tablet{
+    padding: 0 8rem;
+    text-align: center;
+    font-size: rem(60px);
+    margin-top: rem(10px);
+  }
+  @include phone{
+    padding: 0 4rem;
+    text-align: center;
+    font-size: rem(50px);
+    margin-top: rem(5px);
+  }
+}
+.arrow{
+  bottom: rem(50px);
+  position: absolute;
+  @include tablet{
+    bottom: rem(30px);
+  }
+
+  @include phone{
+    bottom: rem(30px);
+  }
+}
+
+.points{
+  position: fixed;
+  right: rem(30px);
+  top: rem(70px);
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.points__item{
+  position:relative;
+  margin-bottom:rem(15px);
+  width:rem(6px);
+  height:rem(6px);
+}
+.points__item:before{
+  content:'';
+  display:inline-block;
+  width:rem(6px);
+  height:rem(6px);
+  background:white;
+  border-radius:50%;
+  position: absolute;
+  left:rem(5px);
+  top:rem(5px);
+}
+.points__item:after{
+  content:'';
+  display:inline-block;
+  width:rem(14px);
+  height:rem(14px);
+  border:rem(1px) solid white;
+  border-radius:50%;
+  position: absolute;
+  left:0;
+  top:0;
+  opacity:0;
+}
+.points__item:hover:after{
+  opacity:1;
+  cursor:pointer;
+}
