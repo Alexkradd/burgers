@@ -654,22 +654,28 @@
   flex-direction: column; }
 
 .team__item {
-  margin-bottom: 2.1875rem;
-  text-align: center; }
+  margin-bottom: 2.1875rem; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .team__item {
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .team__item {
+      text-align: center; } }
 
 .team__name {
   color: #fff;
   display: inline-block;
-  text-align: center;
   position: relative;
   font-family: gagalinregular;
   font-size: 0.875rem; }
   @media (min-width: 480px) and (max-width: 768px) {
     .team__name {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      text-align: center; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .team__name {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      text-align: center; } }
   .team__name:before {
     content: "";
     height: 0;
@@ -680,7 +686,7 @@
     margin-right: 0.625rem;
     position: absolute;
     top: 35%;
-    left: -10%; }
+    left: -15%; }
 
 .team__item_active .team__name {
   color: #f9b43b; }

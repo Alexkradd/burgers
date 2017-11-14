@@ -53,20 +53,26 @@
 }
 .team__item{
   margin-bottom: rem(35px);
-  text-align: center;
+  @include tablet{
+    text-align: center;
+  }
+  @include phone{
+    text-align: center;
+  }
 }
 .team__name{
   color: #fff;
   display: inline-block;
-  text-align: center;
   position: relative;
   font-family: gagalinregular;
   font-size: rem(14px);
   @include tablet{
     font-size: rem(24px);
+    text-align: center;
   }
   @include phone{
     font-size: rem(24px);
+    text-align: center;
   }
 
   &:before {
@@ -79,7 +85,7 @@
     margin-right: rem(10px);
     position: absolute;
     top: 35%;
-    left: -10%;
+    left: -15%;
 
   }
 }
