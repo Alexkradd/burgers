@@ -53,11 +53,13 @@
 }
 .team__item{
   margin-bottom: rem(35px);
+  text-align: center;
 }
 .team__name{
   color: #fff;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
+  position: relative;
   font-family: gagalinregular;
   font-size: rem(14px);
   @include tablet{
@@ -75,6 +77,9 @@
     border-top-color: #f9b43b;
     border-bottom-width: 0;
     margin-right: rem(10px);
+    position: absolute;
+    top: 35%;
+    left: -10%;
 
   }
 }
@@ -114,14 +119,22 @@
   background-size: cover;
   flex: 1;
   margin-left: rem(15px);
+  @include tablet{
+    margin: 0;
+  }
+  @include phone{
+    margin: 0;
+  }
 }
 .team__text{
   margin-left: rem(20px);
   @include tablet{
     text-align: center;
+    margin: 0;
   }
   @include phone{
     text-align: center;
+    margin: 0;
   }
 }
 .team__text_title{
