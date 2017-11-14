@@ -42,19 +42,22 @@
 }
 .menu-list__title{
   position: absolute;
-  transform: rotate(-90deg) translateY(-170%);
   display: inline-block;
-  top: 50%;
+  top: 65%;
   font-family: gagalinregular;
   font-size: rem(40px);
   color: white;
   text-decoration: none;
   white-space: nowrap;
+  transform: rotate(-90deg) translateY(90%);
+  transform-origin: left top;
   @include tablet{
-    top: 70%;
+    top: 90%;
+    transform: rotate(-90deg) translateY(50%);
   }
   @include phone{
-    top: 70%;
+    top: 90%;
+    transform: rotate(-90deg) translateY(40%);
   }
 }
 .menu-list__description{

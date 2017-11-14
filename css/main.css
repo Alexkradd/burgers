@@ -143,7 +143,8 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; } }
+    align-items: center;
+    top: 55%; } }
 
 .intro__intro__image {
   -webkit-box-align: start;
@@ -241,7 +242,7 @@
       bottom: 1.875rem; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .arrow {
-      bottom: 1.875rem; } }
+      bottom: 2%; } }
 
 .points {
   position: fixed;
@@ -249,7 +250,8 @@
   top: 4.375rem;
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 99; }
 
 .points__item {
   position: relative;
@@ -635,7 +637,7 @@
   margin: 5.3125rem 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .team__title {
-      margin: 3.75rem 0 5.3125rem 0; } }
+      margin: 2rem 0 3rem 0; } }
 
 .team-list {
   display: -webkit-box;
@@ -816,22 +818,31 @@
 
 .menu-list__title {
   position: absolute;
-  -webkit-transform: rotate(-90deg) translateY(-170%);
-  -ms-transform: rotate(-90deg) translateY(-170%);
-  transform: rotate(-90deg) translateY(-170%);
   display: inline-block;
-  top: 50%;
+  top: 65%;
   font-family: gagalinregular;
   font-size: 2.5rem;
   color: white;
   text-decoration: none;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-transform: rotate(-90deg) translateY(90%);
+  -ms-transform: rotate(-90deg) translateY(90%);
+  transform: rotate(-90deg) translateY(90%);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top; }
   @media (min-width: 480px) and (max-width: 768px) {
     .menu-list__title {
-      top: 70%; } }
+      top: 90%;
+      -webkit-transform: rotate(-90deg) translateY(50%);
+      -ms-transform: rotate(-90deg) translateY(50%);
+      transform: rotate(-90deg) translateY(50%); } }
   @media (min-width: 320px) and (max-width: 480px) {
     .menu-list__title {
-      top: 70%; } }
+      top: 90%;
+      -webkit-transform: rotate(-90deg) translateY(40%);
+      -ms-transform: rotate(-90deg) translateY(40%);
+      transform: rotate(-90deg) translateY(40%); } }
 
 .menu-list__description {
   width: 0;
@@ -1039,14 +1050,11 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center;
+        margin-bottom: 0.8rem; } }
   .form__column {
     display: -webkit-box;
     display: -webkit-flex;
