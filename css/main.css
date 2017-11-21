@@ -1282,12 +1282,36 @@
 .burgers {
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover; }
+  .burgers__container {
+    position: relative; }
 
 .burgers__content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .burgers__col {
   position: relative;
@@ -1400,7 +1424,14 @@
 
 .burgers-image {
   width: 95%;
-  margin-top: 4.375rem; }
+  padding-top: 4.375rem;
+  margin: 0 auto; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers-image {
+      width: 80%; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers-image {
+      width: 88%; } }
 
 .burgers__picture {
   max-width: 100%; }
@@ -1409,6 +1440,14 @@
   position: absolute;
   text-align: center;
   opacity: 0.5; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers-calories {
+      top: 0;
+      right: 0; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers-calories {
+      top: 0;
+      right: 0; } }
 
 .calories__icon {
   width: 3.21429rem;
@@ -1429,9 +1468,29 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers__info {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers__info {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; } }
 
 .burgers__title {
   color: #ffffff; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers__title {
+      width: 25rem; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers__title {
+      width: 25rem; } }
 
 .burgers__descriptions {
   margin-top: 3.125rem;
@@ -1440,6 +1499,13 @@
   font-size: 0.875rem;
   color: white;
   line-height: 1.5; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .burgers__descriptions {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .burgers__descriptions {
+      margin-top: 2rem; } }
 
 .price-info {
   display: -webkit-box;

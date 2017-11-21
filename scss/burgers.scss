@@ -1,18 +1,27 @@
 .burgers{
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover;
+  &__container{
+    position: relative;
+  }
 }
 .burgers__content{
   display: flex;
+  @include tablet{
+     flex-direction: column;
+     align-items: center;
+   }
+  @include phone{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .burgers__col{
   position: relative;
   flex: 1 0 50%;
 
 }
-.burgers__photo{
 
-}
 .burgers-components{
   display: flex;
   position: absolute;
@@ -98,7 +107,15 @@
 }
 .burgers-image{
   width: 95%;
-  margin-top: rem(70px)
+  padding-top: rem(70px);
+  margin: 0 auto;
+  @include phone{
+    width: 80%;
+  }
+  @include tablet{
+    width: 88%;
+  }
+
 }
 .burgers__picture{
   max-width: 100%;
@@ -107,6 +124,14 @@
   position: absolute;
   text-align: center;
   opacity: 0.5;
+  @include tablet{
+    top: 0;
+    right: 0;
+  }
+  @include phone{
+    top: 0;
+    right: 0;
+  }
 }
 .calories__icon{
   width: 3.21429rem;
@@ -120,9 +145,23 @@
 .burgers__info{
   display: flex;
   flex-direction: column;
+  @include tablet{
+    align-items: center;
+    text-align: center;
+  }
+  @include phone{
+    align-items: center;
+    text-align: center;
+  }
 }
 .burgers__title{
   color: #ffffff;
+  @include tablet{
+    width: rem(400px);
+  }
+  @include phone{
+    width: rem(400px);
+  }
 }
 .burgers__descriptions{
   margin-top: rem(50px);
@@ -131,6 +170,13 @@
   font-size: rem(14px);
   color: white;
   line-height: 1.5;
+  @include phone{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  @include tablet{
+    margin-top: 2rem;
+  }
 }
 .price-info{
   display: flex;
