@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-const a=2;
-=======
+
 var hamburger = document.querySelector(".nav-hamburger");
 var nav = document.querySelector(".nav");
 console.log(hamburger);
@@ -14,4 +12,3 @@ hamburger.addEventListener("click", function(){
     }
 
 });
->>>>>>> c01460243140f0a81d96bbce33135e8c8abeab04
