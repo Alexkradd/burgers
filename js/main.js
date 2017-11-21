@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-const a=2;
-=======
+
 var hamburger = document.querySelector(".nav-hamburger");
 var nav = document.querySelector(".nav");
 console.log(hamburger);
