@@ -35,6 +35,7 @@
 
 .menu-list__link{
 
+
 }
 .menu__image{
   height: 100vh;
@@ -63,6 +64,7 @@
 .menu-list__description{
   width: 0;
   overflow: hidden;
+  transition: 0.5s;
   background-color: rgba(62, 64, 66, 0.9);
 }
 .menu-list__text{
@@ -73,6 +75,8 @@
   line-height: 1.6;
 }
 .menu-list__active .menu-list__description{
+  overflow: hidden;
+  transition: .5s;
   width: rem(550px);
   @include tablet{
     width: 100%;

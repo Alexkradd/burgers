@@ -24,3 +24,8 @@ $baseFontSize : 16;
     @content;
   }
 }
+@mixin phone-iphone {
+  @media (min-width: #{$phone-width}) and (max-width: #{400px}) {
+    @content;
+  }
+}

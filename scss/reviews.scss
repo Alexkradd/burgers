@@ -91,6 +91,8 @@
   background-color: #2f3234;
   border-radius: rem(5px);
   padding: rem(14px);
+  outline: none;
+  text-decoration: none;
   @include tablet{
     padding: rem(11px);
   }
@@ -103,7 +105,34 @@
   cursor:pointer;
 
 }
-.reviews__link:hover{
+.reviews__link:hover {
   background-color: #1f2122;
-  cursor:pointer;
+  cursor: pointer;
+}
+.fancybox-close-small:after{
+  color: #e35028;
+  right: 3px;
+  font: 40px/40px Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 600;
+}
+
+.reviews__name-popup{
+  color: black;
+}
+.reviews__text-popup{
+  color: black;
+  @include phone{
+    display: block;
+  }
+}
+.popup-reviews{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.35714rem;
+  padding: 1.42857rem 2.14286rem;
+  transition: .5s;
 }

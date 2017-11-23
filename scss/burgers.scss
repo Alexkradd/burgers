@@ -1,8 +1,10 @@
 .burgers{
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   background-size: cover;
+  flex-direction: row;
   &__container{
     position: relative;
+    margin: 0 auto;
   }
 }
 .burgers__content{

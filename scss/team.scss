@@ -98,7 +98,9 @@
     }
   }
   .team__content{
-    height: auto;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
     @include tablet{
       flex-direction: column;
       align-items: center;
@@ -115,6 +117,7 @@
   margin-top: rem(15px);
   height: 0;
   overflow: hidden;
+  transition: .5s;
 }
 .team__avatar{
   background-image: url(../img/team/dan.jpg);

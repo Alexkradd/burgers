@@ -5,7 +5,8 @@
     <title>Burgers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="./css/main.css?1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -52,38 +53,9 @@
               <a href="" class="arrow">
                   <img src="./img/arrow-scroll.png" class="arrow__img" alt="">
               </a>
-              <ul class="points">
-                  <li class="points__item">
-                      <a href="./css/home-page.css" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="./css/about.css" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
-                  <li class="points__item">
-                      <a href="" class="points__link"></a>
-                  </li>
 
-              </ul>
           </section>
-          <section class="screen about">
+          <section class="screen about ">
              <div class="container about__container">
                  <span class="section__title about__title">Мы лучшие</span>
                  <ul class="about-list">
@@ -113,7 +85,7 @@
                  </ul>
              </div>
           </section>
-          <section class="screen burgers">
+          <section class="screen burgers ">
               <div class="container burgers__container">
                   <div class="burgers__content">
                       <div class="burgers__col burgers__photo">
@@ -215,7 +187,7 @@
               </div>
 
           </section>
-          <section class="team">
+          <section class="team ">
               <div class="container-team">
                   <div class="team__descriptions">
                       <h1 class="section__title team__title">Команда</h1>
@@ -265,13 +237,17 @@
                   </div>
               </div>
           </section>
-          <section class="menu">
+          <section class="menu ">
               <div class="section__title menu__title">Меню</div>
               <ul class="menu-list">
                   <li class="menu-list__item">
                       <a href="" class="menu-list__link">
                           <div><img class="menu__image" src="./img/menu/menu-1.png"></div>
                           <span class="menu-list__title">Для мясоедов</span></a>
+                      <div class="menu-list__description">
+                          <p class="menu-list__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
+                      </div>
                   </li>
                   <li class="menu-list__item menu-list__active">
                       <a href="" class="menu-list__link">
@@ -286,18 +262,22 @@
                       <a href="" class="menu-list__link">
                           <div><img class="menu__image" src="./img/menu/menu-3.png"></div>
                           <span class="menu-list__title">Диетическое</span></a>
+                      <div class="menu-list__description">
+                          <p class="menu-list__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
+                      </div>
                   </li>
               </ul>
 
           </section>
-          <section class="reviews">
+          <section class="reviews ">
               <ul class="reviews-list">
                   <li class="reviews__item">
                       <div class="reviews__image"><img class="reviews__picture" src="./img/reviews/man1.png" alt=""></div>
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -305,7 +285,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -313,7 +293,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -321,7 +301,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -329,7 +309,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item" >
@@ -337,7 +317,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -345,7 +325,7 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
                   <li class="reviews__item">
@@ -353,12 +333,12 @@
                       <div class="reviews__description">
                           <span class="reviews__name">Константин Спилберг</span>
                           <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                          <a class="reviews__link">Подробнее</a>
+                          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="reviews__link">Подробнее</a>
                       </div>
                   </li>
               </ul>
           </section>
-          <section class="order-form">
+          <section class="order-form ">
               <div class="container form-container">
                   <h1 class="section__title order-form__title">Закажите доставку</h1>
                   <form class="form">
@@ -431,7 +411,7 @@
 
               </div>
           </section>
-          <section class="contact">
+          <section class="contact ">
                   <footer class="contact-footer">
                       <div class="container contact-info">
                           <address class="contact-info__information">
@@ -481,8 +461,17 @@
                   </footer>
 
           </section>
+          <div id="hidden-content" class="popup-reviews">
+              <h2 class="reviews__name reviews__name-popup">Константин Спилберг</h2>
+              <p class="reviews__text reviews__text-popup">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          </div>
       </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="./js/jquery.onepage-scroll.js"></script>
+      <script src="./js/jquery.fancybox.min.js"></script>
       <script src="./js/main.js"></script>
+
+
 
 </body>
 </html>
