@@ -1,3 +1,4 @@
+
 /*hamburger-active*/
 var hamburger = document.querySelector(".nav-hamburger");
 var nav = document.querySelector(".nav");
@@ -12,6 +13,7 @@ hamburger.addEventListener("click", function(){
     }
 
 });
+
 
 //acco
 $(function () {
