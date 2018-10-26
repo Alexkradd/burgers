@@ -1,0 +1,222 @@
+.burgers{
+  background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
+  background-size: cover;
+  flex-direction: row;
+  &__container{
+    position: relative;
+    margin: 0 auto;
+  }
+}
+.burgers__content{
+  display: flex;
+  @include tablet{
+     flex-direction: column;
+     align-items: center;
+   }
+  @include phone{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.burgers__col{
+  position: relative;
+  flex: 1 0 50%;
+
+}
+
+.burgers-components{
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.components__link{
+  border-radius: rem(4px);
+  padding: rem(10px) rem(20px);
+  text-align: center;
+  transition: .5s;
+  cursor: pointer;
+  background-color: #f08c33;
+  &:hover + .components__list{
+    visibility: visible;
+  }
+}
+.components__icon{
+  width: 3.21429rem;
+  height: 3rem;
+}
+.burgers__link_icon{
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+.components__list{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: rem(16px) rem(20px);
+  border-radius: rem(4px);
+  box-sizing: border-box;
+  opacity: 0.9;
+  visibility: hidden;
+  z-index: 999;
+}
+.components__item{
+  display: flex;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: rem(16px);
+  &:last-child{
+    margin: 0;
+  }
+}
+.components__item_icon{
+  width: 2.64286rem;
+  height: 2.85714rem;
+  margin-right: rem(20px);
+}
+.components__image {
+  width: 100%;
+  height: 100%;
+  &_red {
+    fill: #e25028;
+  }
+  &_orange{
+    fill: #f8b439;
+  }
+  &_green{
+    fill: #8ac03e;
+  }
+}
+.components__name{
+  font-size: rem(14px);
+  color: #2f3234;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  margin-right: rem(60px);
+}
+.components__weight{
+  font-size: rem(14px);
+  color: #2f3234;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: right;
+}
+.icon__title{
+  font-size:rem(14px);
+  font-family: gagalinregular;
+  color: white;
+  text-transform: uppercase;
+}
+.burgers-image{
+  width: 95%;
+  padding-top: rem(70px);
+  margin: 0 auto;
+  @include phone{
+    width: 80%;
+  }
+  @include tablet{
+    width: 88%;
+  }
+
+}
+.burgers__picture{
+  max-width: 100%;
+}
+.burgers-calories{
+  position: absolute;
+  text-align: center;
+  opacity: 0.5;
+  @include tablet{
+    top: 0;
+    right: 0;
+  }
+  @include phone{
+    top: 0;
+    right: 0;
+  }
+}
+.calories__icon{
+  width: 3.21429rem;
+  height: 3rem;
+}
+.calories__title{
+  position: absolute;
+  top: 37%;
+  left: 26%;
+}
+.burgers__info{
+  display: flex;
+  flex-direction: column;
+  @include tablet{
+    align-items: center;
+    text-align: center;
+  }
+  @include phone{
+    align-items: center;
+    text-align: center;
+  }
+}
+.burgers__title{
+  color: #ffffff;
+  @include tablet{
+    width: rem(400px);
+  }
+  @include phone{
+    width: rem(400px);
+  }
+}
+.burgers__descriptions{
+  margin-top: rem(50px);
+  margin-bottom: rem(30px);
+  font-family: 'Ubuntu Light', sans-serif;
+  font-size: rem(14px);
+  color: white;
+  line-height: 1.5;
+  @include phone{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  @include tablet{
+    margin-top: 2rem;
+  }
+}
+.price-info{
+  display: flex;
+  align-items: baseline;
+}
+.burgers__price{
+  display: flex;
+  align-items: baseline;
+  margin-right: rem(30px);
+
+}
+.burgers__price-500{
+  font-size:rem(72px);
+  font-family: gagalinregular;
+  color: #e35028;
+}
+.burgers__price-rub{
+  font-size:rem(30px);
+  font-family: gagalinregular;
+  color: #e35028;
+}
+.owl-prev {
+  position: absolute;
+  background: url(../img/icons/arrow-scroll.svg) 50% 50% no-repeat !important;
+  background-size: contain;
+  width: rem(29px);
+  height: rem(15px);
+  top: 50%;
+  transform: translate(0%, -50%) rotate(90deg);
+  left: 0;
+}
+.owl-next {
+  position: absolute;
+  background: url(../img/icons/arrow-scroll.svg) 50% 50% no-repeat !important;
+  background-size: contain;
+  width: rem(29px);
+  height: rem(15px);
+  top: 50%;
+  transform: translate(0%, -50%) rotate(-90deg);
+  right: 0;
+}
